@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+.containerAboutMe{
+    background-color: white;
+}
+
+.divAboutMe{
+    padding: 10%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: flex-start;
+    
+}
+
+.divTxtAboutMe{
+    width: 80%;
+    font: normal 1.2rem 'Montserrat', sans-serif;
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.divTxtAboutMe h2{
+    font-size:2.5rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+
+.divTxtAboutMe a button{
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    border: 1px solid black;
+    box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.418);
+    border-radius: 2rem;
+    color: white;
+    background-color: black;
+    transition: background-color 1s ease-out;
+    width: 10rem;
+}
+
+
+.divTxtAboutMe a button:hover{
+    background-color: #fff;
+    color: black;
+    cursor: pointer;
+    border-color: rgba(0, 0, 0, 0.041);
+
+}
+
+.divCrv{
+    max-width: 18rem;
+    border: solid 1px rgba(0, 0, 0, 0.459);
+    border-radius: 1rem;
+    box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.541);
+    transition: transform 1s ease;
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.divCrv:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.divCrv img{
+    width: 100%;
+    border-radius: 1rem;
+}
+
+
+
+@media(max-width: 1320px){
+
+    .divAboutMe{
+       padding: 10% 5%;
+    }
+
+    .divTxtAboutMe{
+        width: 90%;
+    }
+  }
+
+  @media(max-width: 1024px){
+    .divTxtAboutMe{
+        font-size: 1rem;
+    }
+
+
+    .divCrv{
+        width: 15rem;
+    }
+  }
+
+  @media(max-width: 768px){
+
+    .divAboutMe{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 5%;
+    }
+    .divTxtAboutMe{
+        font-size: 1rem;
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .divCrv{
+        width: 14rem;
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .divTxtAboutMe a button{
+        margin-left: calc(50% - 4.5rem);
+    }
+  }
+
+  @media(max-width: 350px){
+
+    .divAboutMe{
+        grid-template-rows: 2fr 1fr;
+    }
+    .divCrv{
+        width: 11rem;
+    }
+  }

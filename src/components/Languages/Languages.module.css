@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+.containerPl{
+    background-color: #000;
+}
+
+.divPl{
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    font: 400 1.2rem 'Montserrat', sans-serif;
+    color: #fff;
+    padding: 10%;
+    justify-items: center;
+    align-items: start;
+}
+
+
+.divStats{ 
+    width: 25rem;
+    grid-column: 2;
+    grid-row: 1;
+
+}
+
+.divStats a img{
+   width: 100%;
+   border-radius: 2%;
+}
+
+.divTxtStats{
+    justify-content: center;
+    width: 80%;
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.titleTxtStats{
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.divPlImage {
+    margin-top: 2rem;
+    width: 100%;
+}
+
+.plImage{
+    width: 2.4rem;
+    margin: 1rem;
+}
+
+
+@keyframes toRight{
+    from{
+      transfrom: translateX(-300%);}
+  }
+
+  @keyframes changeColor{
+    from{background-color: #fff;}
+  }
+
+
+  @media(max-width: 1320px){
+    .divPl{
+        padding:10% 5%;
+    }
+
+    .divStats{
+        width: 25rem;
+    }
+
+    .divTxtStats{
+        width: 90%;
+    }
+
+    
+  }
+
+  @media(max-width: 1024px){
+
+    .divStats{
+        width: 22rem;
+    }
+
+    .divTxtStats{
+        font-size: 1rem
+    }
+
+    .plImage{
+        width: 1.5rem;
+    }
+  }
+
+  @media(max-width: 768px){
+    .divPl{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 5%;
+    }
+
+    .divStats{
+        width: 18rem;
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .divTxtStats{
+        font-size: 1rem;
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .plImage{
+        width: 1.5rem;
+    }
+  }
+
+  @media(max-width: 350px){
+    .divPl{
+        grid-template-rows: 2fr 1fr;
+    }
+    .divStats{
+        width: 15rem;
+    }
+  }

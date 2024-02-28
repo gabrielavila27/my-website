@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+.divProjects{
+    width: 100%;
+    background-color: white;
+  
+
+}
+
+.divProjects h2{
+    text-align: center;
+    padding-top: 5%;
+    font: bold 2.5rem 'Montserrat', sans-serif;
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: first baseline;
+    justify-content: center;
+    gap: 5rem;
+    padding: 5% 7%;
+}
+
+@media(max-width: 468px){
+    .divProjects h2{
+        margin: 2rem;
+    }
+}
+

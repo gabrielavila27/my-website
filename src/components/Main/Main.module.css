@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+.mainContainer{
+    background-color: #1ed760;}
+
+.main{
+    font: 500 1.2rem 'Montserrat', sans-serif;;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: calc(100vh - 64px);
+    background-color:  #1ed760;   
+}
+
+
+.sectionProfile{
+    padding: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto 0;
+    animation: fromBottom 1.5s backwards;
+}
+
+.divProfileImage{
+    width: 16rem;
+    border-radius: 10rem;
+}
+
+.profileImage{
+    width: 100%;
+    border-radius: 13rem;
+    border: 1.5px solid rgba(0, 0, 0, 0.527);
+    box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.384);
+}
+
+.divProfileTxt{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width:33%;
+}
+
+.divProfileTxt a button{
+    font-size: 1.3rem;
+    font-weight: 600;
+    padding: 1rem;
+    width:10rem;
+    border: 1px solid black;
+    border-radius: 2rem;
+    color: white;
+    background-color: black;
+    transition: background-color 1s ease-out;
+    box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.418);
+}
+
+.divProfileTxt button:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    border-color: rgba(0, 0, 0, 0.041);
+}
+
+.profileTxt{
+    font-size: 1.2rem;
+    border-radius: 2rem;
+    padding: 2rem;
+    color:  black;
+}
+
+.divPlImage{
+    animation: fromBottom 1.5s backwards;
+    margin: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+}
+
+
+.plImage{
+    width: 2rem;
+}
+
+
+@keyframes toRight{
+    from{
+        opacity: 0;
+        transform: translateY(20%);
+    }
+  }
+
+  to{
+        opacity: 1;
+        transform: translateY(0);
+       
+  }
+
+
+  @keyframes fromBottom {
+    from{
+        opacity: 0;
+        transform: translateY(20%);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0)
+    }
+}
+
+
+/* Resposividade */
+@media(max-width: 1320px){
+    .divProfileImage{
+        width: 14rem;
+    }
+
+    .divProfileTxt{
+        width: 41%;
+    }
+
+    .profileTxt{
+        font-size: 1.1rem;
+    }
+
+    .divPlImage{
+        gap: 3rem;
+    }
+    .plImage{
+        width: 1.8rem;
+    }
+
+}
+
+@media(max-width: 1024px){
+ 
+    .main{
+       font-size: 0.9rem;;
+       height: auto;
+       align-items: center;
+       row-gap: 1rem;;
+    }
+
+    .sectionProfile{
+        flex-direction: column;
+    }
+
+    .divProfileTxt{
+        width: 90%;
+    }
+
+    .divProfileTxt button{
+        font-size: 1rem;
+    }
+
+    .divProfileImage{
+        width: 14rem;
+    }
+
+}
+
+@media(max-width: 768px){
+    .main{
+        height: auto;
+        
+    }
+
+    .divProfileTxt{
+        width: 100%;
+    }
+
+    .divPlImage{
+        gap: 2rem;
+    }
+}
+
+@media(max-width: 350px){
+    .divProfileImage{
+        width: 13rem;
+    }
+
+   
+}
+
