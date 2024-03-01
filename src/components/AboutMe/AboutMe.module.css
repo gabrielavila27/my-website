@@ -101,6 +101,7 @@
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
         gap: 5%;
+        align-items: center;
     }
     .divTxtAboutMe{
         font-size: 1rem;
@@ -125,6 +126,10 @@
         grid-template-rows: 2fr 1fr;
     }
     .divCrv{
-        width: 11rem;
+        width: 12rem;
+    }
+
+    .divAboutMe h2{
+        font-size: 2rem;
     }
   }

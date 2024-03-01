@@ -140,7 +140,6 @@
        font-size: 0.9rem;;
        height: auto;
        align-items: center;
-       row-gap: 1rem;;
     }
 
     .sectionProfile{
@@ -164,7 +163,6 @@
 @media(max-width: 768px){
     .main{
         height: auto;
-        
     }
 
     .divProfileTxt{
@@ -178,7 +176,7 @@
 
 @media(max-width: 350px){
     .divProfileImage{
-        width: 13rem;
+        width: 11rem;
     }
 
    

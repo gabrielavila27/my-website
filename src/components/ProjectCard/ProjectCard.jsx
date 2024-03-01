@@ -1,4 +1,3 @@
-import { useEffect, useState } from 'react';
 import styles from './ProjectCard.module.css'
 import {Star, GitFork, Eye} from '@phosphor-icons/react'
 import codeIcon from '../../assets/images/code.png'
@@ -23,33 +22,6 @@ function ProjectCard({name, description, watchers, forks, stars, date, url, lang
          }
      }
 
-
-
-    // useEffect(() => {
-    // const languageIcons = (item) => {
-    //     if(item !== null && item !== undefined){
-    //          const lowerCase = item.toLowerCase();
-    //          if(lowerCase === 'jupyter notebook'){
-    //              setIcon(<img src=' https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg'/>)
-    //          } else if(item === 'HTML'){
-    //              setIcon(<img src=' https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg'/>)
-    //          } else if(item === 'CSS'){
-    //              setIcon(<img src=' https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg'/>)
-    //          }else{
-    //          const lower = `https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/${lowerCase}/${lowerCase}-original.svg`
-    //          setIcon(<img src={lower} title={item}/>)
-    //      }
-    //      } else{
-    //          return ''
-    //      }
-    //  }
-
-    // languageIcons(language);
- 
-    // }, [])
-
-
-
     return(
         <div className={styles.container}>
           
@@ -61,8 +33,9 @@ function ProjectCard({name, description, watchers, forks, stars, date, url, lang
                 <li title='Forks'><GitFork/> {forks}</li>
                 <li title='Stars'><Star/> {stars}</li>
             </ul>
+
             {languageIcons(language)}
-            {/* <p className={styles.date}>{date}</p> */}
+
             <a href={url} className={styles.buttonLink} target='_blank'><button className={styles.button}>Visitar</button></a>
         </div>
     )

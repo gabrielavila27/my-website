@@ -3,8 +3,6 @@
 .divProjects{
     width: 100%;
     background-color: white;
-  
-
 }
 
 .divProjects h2{
@@ -25,6 +23,16 @@
 @media(max-width: 468px){
     .divProjects h2{
         margin: 2rem;
+    }
+
+    .cards{
+        margin-bottom: 2rem;
+    }
+}
+
+@media(max-width: 350px){
+    .divProjects h2{
+        font-size: 2rem;
     }
 }
 

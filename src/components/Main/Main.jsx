@@ -7,7 +7,7 @@ function Main({image}){
         const year = time.getFullYear();
 
         if(year >= 2026){
-            const graduationMenssage = 'Olá, Bem vindo ao meu website! Me chamo Gabriel Ávila! sou de Maceió-AL. Sou desenvolvedor, bacharel em ciência da computação. Aqui neste site você poderá conferir um pouco dos meu projetos e algumas curiosidades.'
+            const graduationMenssage = 'Olá, Bem vindo ao meu website! Me chamo Gabriel Ávila! sou de Maceió, Alagoas. Sou desenvolvedor, bacharel em ciência da computação. Aqui neste site você poderá conferir um pouco dos meu projetos e algumas curiosidades.'
             return graduationMenssage
         } else{
             const menssage = 'Olá, Bem vindo ao meu website! Me chamo Gabriel Ávila! sou de Maceió, Alagoas. Sou desenvolvedor e estudante de ciência da computação. Aqui neste site você poderá conferir um pouco dos meu projetos e algumas curiosidades.'

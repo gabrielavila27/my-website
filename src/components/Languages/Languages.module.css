@@ -97,10 +97,11 @@
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
         gap: 5%;
+        align-items: center;
     }
 
     .divStats{
-        width: 18rem;
+        width: 19rem;
         grid-column: 1;
         grid-row: 2;
     }
@@ -122,5 +123,9 @@
     }
     .divStats{
         width: 15rem;
+    }
+
+    .divTxtStats h2{
+        font-size: 2rem;
     }
   }

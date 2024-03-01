@@ -9,6 +9,7 @@
     align-items: flex-start;
     justify-content: space-around;
     padding: 5%;
+    flex-direction: row-reverse;
 }
 
 .list li a{
@@ -28,6 +29,7 @@
 
 .listContact li{
     margin-bottom: 1rem;
+    list-style: none;
 }
 
 .sectionContact h3{
@@ -36,4 +38,8 @@
     margin-bottom: 1rem;
 
 }
-
+@media(max-width: 768px){
+   .footerContainer{
+    padding: 10% 0%;
+   }
+}
