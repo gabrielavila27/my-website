@@ -1,6 +1,6 @@
 import styles from './Header.module.css'
 
-function Header({structure}){
+function Header(){
     return(
     <header className={styles.header}>
         <nav className={styles.navMenu}>
