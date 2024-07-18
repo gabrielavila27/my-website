@@ -2,7 +2,7 @@ import styles from './ProjectCard.module.css'
 import {Star, GitFork, Eye} from '@phosphor-icons/react'
 import codeIcon from '../../assets/images/code.png'
 
-function ProjectCard({name, description, watchers, forks, stars, date, url, language}){
+function ProjectCard({name, description, watchers, forks, stars, url, language}){
 
     const languageIcons = (item) => {
         if(item !== null && item !== undefined){
@@ -36,7 +36,7 @@ function ProjectCard({name, description, watchers, forks, stars, date, url, lang
 
             {languageIcons(language)}
 
-            <a href={url} className={styles.buttonLink} target='_blank'><button className={styles.button}>Visitar</button></a>
+            <a id='visitLink' href={url} className={styles.buttonLink} target='_blank'><button  className={styles.button}>Visitar</button></a>
         </div>
     )
 }
